@@ -8,7 +8,7 @@ After parsing, it also decodes the html entities.
 ## Install
 
 ```bash
-npm i -S
+npm i -S parse-html-text-content
 ```
 
 ## Usage
