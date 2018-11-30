@@ -9,7 +9,7 @@
   "author": "jtara1",
   "license": "ISC",
   "dependencies": {
-    "html-entities": "^1.2.1",
+    "html-entities": "^1.2.1"
   },
   "devDependencies": {
     "glob": "^7.1.3",
