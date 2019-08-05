@@ -21,11 +21,12 @@ module.exports = function parseTextContent(
   htmlText = htmlText.replace(/<style.*?>[\s\S]*?<\/style>/g, '');
   htmlText = htmlText.replace(/<[\s\S]*?>/g, ' ');
 
+  htmlText = entities.decode(htmlText); // some entities are whitespace chars
+
   // parse out bulky whitespace chars
   htmlText = htmlText.replace(/\n{2,}/g, '\n');
   htmlText = htmlText.replace(/ {2,}/g, ' ');
   htmlText = htmlText.replace(/\s{2,}/g, '\n');
 
-  htmlText = entities.decode(htmlText);
   return htmlText;
 };
