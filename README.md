@@ -1,4 +1,13 @@
 # ParseHtmlTextContent
+
+## Deprecated
+
+While there are use cases where this is necessary, they are very low impact use cases.
+
+Ideally, your html parsing library should suffice for getting the inner text.
+
+## About 
+
 parse the textContent of all elements of the html text without having to create a DOM from the html
 
 Uses regex to filter out text between & including chars: `<`, `>`
